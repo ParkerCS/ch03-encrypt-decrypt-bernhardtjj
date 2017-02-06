@@ -1,12 +1,10 @@
-
-
 def encode(key, string):
-    '''
+    """
     Encode a message using encryption key
     :param key: encryption key
     :param string: message to encrypt
     :return: encrypted message
-    '''
+    """
     encoded_chars = []
     for i in range(len(string)):
         key_c = key[i % len(key)]
